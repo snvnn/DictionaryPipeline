@@ -1,0 +1,177 @@
+{
+  "id": "basic-vocabulary-authoring-v1",
+  "kind": "basic-vocabulary-authoring",
+  "version": 1,
+  "entries": [
+    {
+      "sourceID": "basic-vocabulary-0001",
+      "word": "学校",
+      "reading": "がっこう",
+      "flippersContent": {
+        "koMeaning": "학교",
+        "exampleJP": "学校に行きます。",
+        "exampleReading": "",
+        "exampleKO": "학교에 갑니다.",
+        "tags": ["starter", "place"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0002",
+      "word": "先生",
+      "reading": "せんせい",
+      "flippersContent": {
+        "koMeaning": "선생님",
+        "exampleJP": "先生に質問します。",
+        "exampleReading": "",
+        "exampleKO": "선생님께 질문합니다.",
+        "tags": ["starter", "people"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0003",
+      "word": "勉強",
+      "reading": "べんきょう",
+      "flippersContent": {
+        "koMeaning": "공부",
+        "exampleJP": "日本語を勉強します。",
+        "exampleReading": "",
+        "exampleKO": "일본어를 공부합니다.",
+        "tags": ["starter", "study"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0004",
+      "word": "時間",
+      "reading": "じかん",
+      "flippersContent": {
+        "koMeaning": "시간",
+        "exampleJP": "時間があります。",
+        "exampleReading": "",
+        "exampleKO": "시간이 있습니다.",
+        "tags": ["starter", "time"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0005",
+      "word": "今日",
+      "reading": "きょう",
+      "flippersContent": {
+        "koMeaning": "오늘",
+        "exampleJP": "今日は忙しいです。",
+        "exampleReading": "",
+        "exampleKO": "오늘은 바쁩니다.",
+        "tags": ["starter", "time"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0006",
+      "word": "明日",
+      "reading": "あした",
+      "flippersContent": {
+        "koMeaning": "내일",
+        "exampleJP": "明日また来ます。",
+        "exampleReading": "",
+        "exampleKO": "내일 다시 옵니다.",
+        "tags": ["starter", "time"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0007",
+      "word": "友達",
+      "reading": "ともだち",
+      "flippersContent": {
+        "koMeaning": "친구",
+        "exampleJP": "友達と話します。",
+        "exampleReading": "",
+        "exampleKO": "친구와 이야기합니다.",
+        "tags": ["starter", "people"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0008",
+      "word": "電車",
+      "reading": "でんしゃ",
+      "flippersContent": {
+        "koMeaning": "전철, 기차",
+        "exampleJP": "電車に乗ります。",
+        "exampleReading": "",
+        "exampleKO": "전철을 탑니다.",
+        "tags": ["starter", "transport"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0009",
+      "word": "食べる",
+      "reading": "たべる",
+      "flippersContent": {
+        "koMeaning": "먹다",
+        "exampleJP": "朝ご飯を食べます。",
+        "exampleReading": "",
+        "exampleKO": "아침밥을 먹습니다.",
+        "tags": ["starter", "verb"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    },
+    {
+      "sourceID": "basic-vocabulary-0010",
+      "word": "見る",
+      "reading": "みる",
+      "flippersContent": {
+        "koMeaning": "보다",
+        "exampleJP": "映画を見ます。",
+        "exampleReading": "",
+        "exampleKO": "영화를 봅니다.",
+        "tags": ["starter", "verb"]
+      },
+      "review": {
+        "status": "reviewed",
+        "reviewer": "Flippers",
+        "notes": "Migrated from the app starter preset."
+      }
+    }
+  ]
+}

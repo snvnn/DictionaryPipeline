@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "example": "今日は日曜日です。 / きょうはにちようびです。 / 오늘은 일요일입니다.",
+      "kanji": "日",
+      "kunyomi": "ひ, か",
+      "meaning": "날, 해",
+      "onyomi": "ニチ, ジツ",
+      "presetID": "jouyou-kanji-v1-0001",
+      "presetVersion": 1,
+      "sourceLabel": "Flippers authored content + official Jouyou Kanji facts",
+      "type": "kanji"
+    }
+  ],
+  "expectedCardCount": 2136,
+  "exportMode": "sample",
+  "id": "jouyou-kanji-v1",
+  "sourceLabel": "Flippers authored content + official Jouyou Kanji facts",
+  "subtitle": "상용 한자표 기반 한자 프리셋",
+  "title": "상용 한자 2136",
+  "version": 1
+}

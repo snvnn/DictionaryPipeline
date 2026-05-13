@@ -13,3 +13,8 @@ Planned export targets:
 
 - `jouyou-kanji-v1.json`
 - `basic-vocabulary-v1.json`
+
+Draft sample exports use separate filenames:
+
+- `jouyou-kanji-v1.sample.json`
+- `basic-vocabulary-v1.sample.json`

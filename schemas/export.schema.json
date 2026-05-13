@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flippers.local/schemas/export.schema.json",
+  "title": "Flippers App-Ready Preset Export",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "subtitle",
+    "version",
+    "sourceLabel",
+    "expectedCardCount",
+    "exportMode",
+    "cards"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "sourceLabel": { "type": "string", "minLength": 1 },
+    "expectedCardCount": { "type": "integer", "minimum": 0 },
+    "exportMode": { "type": "string", "enum": ["production", "sample"] },
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "presetID",
+          "presetVersion",
+          "sourceLabel",
+          "type",
+          "meaning",
+          "example"
+        ],
+        "oneOf": [
+          {
+            "required": ["word", "reading"],
+            "properties": { "type": { "const": "word" } }
+          },
+          {
+            "required": ["kanji", "onyomi", "kunyomi"],
+            "properties": { "type": { "const": "kanji" } }
+          }
+        ],
+        "properties": {
+          "presetID": { "type": "string", "minLength": 1 },
+          "presetVersion": { "type": "integer", "minimum": 1 },
+          "sourceLabel": { "type": "string", "minLength": 1 },
+          "type": { "type": "string", "enum": ["word", "kanji"] },
+          "word": { "type": "string", "minLength": 1 },
+          "reading": { "type": "string", "minLength": 1 },
+          "kanji": { "type": "string", "minLength": 1 },
+          "meaning": { "type": "string", "minLength": 1 },
+          "onyomi": { "type": "string" },
+          "kunyomi": { "type": "string" },
+          "example": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

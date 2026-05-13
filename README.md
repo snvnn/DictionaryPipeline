@@ -21,8 +21,10 @@ metadata, draft entries, and review artifacts do not get bundled accidentally.
 
 ## Data Ownership Rule
 
-Official Jouyou Kanji facts and project-authored learning content must stay in
-separate files.
+Official Jouyou Kanji facts and project-authored learning content must stay
+separated by provenance. Raw/source notes belong under `sources/official/`;
+normalized authoring rows may reference official facts, but must keep them in
+official fields apart from `flippersContent`.
 
 - Official facts: kanji, official readings, official example words, source labels.
 - Project-authored content: Korean meanings, Korean notes, Japanese examples,
@@ -38,6 +40,47 @@ attribution are recorded in `sources/`.
 3. Add Flippers-authored Korean meanings and examples under `authoring/`.
 4. Run `scripts/validate_dictionary.py`.
 5. Export reviewed entries into `exports/` for the iOS app preset importer.
+
+## Commands
+
+Validate authoring data:
+
+```sh
+python3 scripts/validate_dictionary.py
+```
+
+Export draft samples for pipeline/app integration checks:
+
+```sh
+python3 scripts/export_presets.py --mode sample
+```
+
+Export production presets from reviewed entries only:
+
+```sh
+python3 scripts/export_presets.py --mode production
+```
+
+When the Jouyou Kanji dataset is expected to be complete, enforce the final
+2136-card count:
+
+```sh
+python3 scripts/export_presets.py --mode production --require-complete
+```
+
+Sample exports are written as `exports/*.sample.json`. Production exports are
+written as `exports/*.json`, must not include draft entries, and skip authoring
+files that currently have no reviewed entries.
+
+## App-Ready Export Shape
+
+Exports use direct card fields so they can map cleanly into Flippers preset
+imports:
+
+- Word cards: `presetID`, `presetVersion`, `sourceLabel`, `type`, `word`,
+  `reading`, `meaning`, `example`
+- Kanji cards: `presetID`, `presetVersion`, `sourceLabel`, `type`, `kanji`,
+  `meaning`, `onyomi`, `kunyomi`, `example`
 
 ## Current Status
 
