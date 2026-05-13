@@ -1,0 +1,24 @@
+{
+  "id": "basic-vocabulary-authoring-v1",
+  "kind": "basic-vocabulary-authoring",
+  "version": 1,
+  "entries": [
+    {
+      "sourceID": "basic-vocabulary-0001",
+      "word": "学校",
+      "reading": "がっこう",
+      "flippersContent": {
+        "koMeaning": "학교",
+        "exampleJP": "学校に行きます。",
+        "exampleReading": "がっこうにいきます。",
+        "exampleKO": "학교에 갑니다.",
+        "tags": ["starter", "place"]
+      },
+      "review": {
+        "status": "draft",
+        "reviewer": null,
+        "notes": "Sample entry only."
+      }
+    }
+  ]
+}

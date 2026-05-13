@@ -1,0 +1,28 @@
+{
+  "id": "jouyou-kanji-authoring-v1",
+  "kind": "jouyou-kanji-authoring",
+  "version": 1,
+  "entries": [
+    {
+      "sourceID": "jouyou-kanji-0001",
+      "kanji": "日",
+      "officialReadings": {
+        "onyomi": ["ニチ", "ジツ"],
+        "kunyomi": ["ひ", "か"]
+      },
+      "officialExamples": ["日本", "日曜日"],
+      "flippersContent": {
+        "koMeaning": "날, 해",
+        "exampleJP": "今日は日曜日です。",
+        "exampleReading": "きょうはにちようびです。",
+        "exampleKO": "오늘은 일요일입니다.",
+        "tags": ["starter", "time"]
+      },
+      "review": {
+        "status": "draft",
+        "reviewer": null,
+        "notes": "Sample entry only."
+      }
+    }
+  ]
+}

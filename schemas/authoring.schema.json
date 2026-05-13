@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flippers.local/schemas/authoring.schema.json",
+  "title": "Flippers Dictionary Authoring File",
+  "type": "object",
+  "required": ["id", "kind", "version", "entries"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": ["jouyou-kanji-authoring", "basic-vocabulary-authoring"]
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["sourceID", "flippersContent", "review"],
+        "properties": {
+          "sourceID": { "type": "string", "minLength": 1 },
+          "kanji": { "type": "string", "minLength": 1, "maxLength": 2 },
+          "word": { "type": "string", "minLength": 1 },
+          "reading": { "type": "string", "minLength": 1 },
+          "officialReadings": {
+            "type": "object",
+            "properties": {
+              "onyomi": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "kunyomi": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              }
+            },
+            "additionalProperties": false
+          },
+          "officialExamples": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "flippersContent": {
+            "type": "object",
+            "required": ["koMeaning", "exampleJP", "exampleKO"],
+            "properties": {
+              "koMeaning": { "type": "string", "minLength": 1 },
+              "exampleJP": { "type": "string", "minLength": 1 },
+              "exampleReading": { "type": "string" },
+              "exampleKO": { "type": "string", "minLength": 1 },
+              "tags": {
+                "type": "array",
+                "items": { "type": "string", "minLength": 1 }
+              }
+            },
+            "additionalProperties": false
+          },
+          "review": {
+            "type": "object",
+            "required": ["status"],
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": ["draft", "reviewed", "blocked"]
+              },
+              "reviewer": { "type": ["string", "null"] },
+              "notes": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
